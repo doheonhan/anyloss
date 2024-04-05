@@ -11,7 +11,11 @@
 * 4-40: (MSE/BCE/AnyLoss) Performance on 102 Datasets - MLP
 4. Comparison with Resampling Strategy
 * 4-11: (BCE_SMOTE/BCE_RandomUndersampling/AnyLoss) Comparison on 4 Datasets - SLP
-4. Learning Speed
+5. Learning Speed
 * 4-51: (MSE/BCE/AnyLoss) Learning Speed on 4 Datasets - SLP
 * 4-52: (SOL) Learning Speed on 4 Datasets - SLP
 * 4-62: (MSE/BCE/AnyLoss/SOL) Learning Speed on 4 Datasets - MLP
+6. Misc.
+* 4 datasets (breast_cancer, diabetes_prediction_dataset) and others are too big to upload.
+* 102 datasets: data_num
+* Bayesian Sign Test: bayesiantests.py and BAYES_Mine.ipynb
