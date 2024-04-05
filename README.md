@@ -1,8 +1,17 @@
 # AnyLoss
 
-This contains 
-* Data(Data collection code and collected data)
-* W2V(w2v train code, w2v models and more text data)
-* Test(Test codes): Split 7 means (Split 6 + the new feature 'Q')
-
-Embedding vectors from ADA are too large, so let me know if you need the file. 
+1. Pure Code Review: AnyLoss - Code.ipynb
+2. 4 datasets
+* 4-10: (MSE/BCE/AnyLoss) Performance on 4 Datasets - SLP
+* 4-13: (SOL) Perfomance on 4 datasets - SLP
+* 4-20: (MSE/BCE/AnyLoss) Performance on 4 Datasets - MLP
+* 4-22: (SOL) Performance on 4 Datasets - MLP
+3. 102 datasets
+* 4-30: (MSE/BCE/AnyLoss) Performance on 102 Datasets - SLP
+* 4-40: (MSE/BCE/AnyLoss) Performance on 102 Datasets - MLP
+4. Comparison with Resampling Strategy
+* 4-11: (BCE_SMOTE/BCE_RandomUndersampling/AnyLoss) Comparison on 4 Datasets - SLP
+4. Learning Speed
+* 4-51: (MSE/BCE/AnyLoss) Learning Speed on 4 Datasets - SLP
+* 4-52: (SOL) Learning Speed on 4 Datasets - SLP
+* 4-62: (MSE/BCE/AnyLoss/SOL) Learning Speed on 4 Datasets - MLP
