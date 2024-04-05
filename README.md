@@ -1,9 +1,10 @@
 # AnyLoss
 
-### 1. Pure Code Review: AnyLoss - Code.ipynb
+### 1. Pure Code Review
+* AnyLoss - Code.ipynb
 ### 2. 4 datasets
 * 4-10: (MSE/BCE/AnyLoss) Performance on 4 Datasets - SLP
-* 4-13: (SOL) Perfomance on 4 datasets - SLP
+* 4-13: (SOL) Performance on 4 datasets - SLP
 * 4-20: (MSE/BCE/AnyLoss) Performance on 4 Datasets - MLP
 * 4-22: (SOL) Performance on 4 Datasets - MLP
 ### 3. 102 datasets
