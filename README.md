@@ -1,4 +1,6 @@
 # AnyLoss
+<Paper> AnyLoss: Transforming Classification Metrics into Loss Functions
+<Goal> Generating a loss function that aims at any confusion matrix-based evaluation metric (e.g., f1 score, balanced accuracy, etc.) in binary classification tasks.
 
 ### 1. Pure Code Review
 * AnyLoss - Code.ipynb
