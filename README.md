@@ -1,6 +1,6 @@
 # AnyLoss
 ## |Paper| AnyLoss: Transforming Classification Metrics into Loss Functions (https://arxiv.org/abs/2405.14745)
-Goal: Generating a loss function that aims at any confusion matrix-based evaluation metric (e.g., f1 score, balanced accuracy, etc.) in binary classification tasks.
+### Generating a loss function that aims at any confusion matrix-based evaluation metric (e.g., f1 score, balanced accuracy, etc.) in binary classification tasks.
 
 ## |How to use|
 The code files below contain the pure code of AnyLoss and the experiments executed in the paper. 
