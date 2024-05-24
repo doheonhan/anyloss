@@ -1,5 +1,5 @@
 # AnyLoss
-## |Paper| AnyLoss: Transforming Classification Metrics into Loss Functions (https://arxiv.org/abs/2405.14745)
+## |Paper| AnyLoss: Transforming Classification Metrics into Loss Functions (https://arxiv.org/abs/2405.14745) 
 ### Generating a loss function that aims at any confusion matrix-based evaluation metric (e.g., f1 score, balanced accuracy, etc.) in binary classification tasks.
 
 ## |How to use|
