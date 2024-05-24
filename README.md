@@ -1,6 +1,7 @@
 # AnyLoss
-## |Paper| AnyLoss: Transforming Classification Metrics into Loss Functions (https://arxiv.org/abs/2405.14745) 
-### Generating a loss function that aims at any confusion matrix-based evaluation metric (e.g., f1 score, balanced accuracy, etc.) in binary classification tasks.
+## |Paper| 
+* AnyLoss: Transforming Classification Metrics into Loss Functions (https://arxiv.org/abs/2405.14745) 
+* Generating a loss function that aims at any confusion matrix-based evaluation metric (e.g., f1 score, balanced accuracy, etc.) in binary classification tasks.
 
 ## |How to use|
 ### 1. The code of AnyLoss in Single-Layer Perceptron (SLP) and Multi-Layer Perceptron (MLP) is shown below.
@@ -24,7 +25,9 @@
 * 102 datasets: 'data_num' folder here
 * Bayesian Sign Test: bayesiantests.py and BAYES_Mine.ipynb
 * Additional Information for the paper
-  
+
+### 7. Additional work for rebuttal to reviewers of KDD 2024 (Included in the paper)
+
 [Description of 102 Diverse Datasets]
   
 | **Dataset** | **#Sample** | **#Feature** | **Class Dist ('0':'1')** | **Dataset** | **#Sample** | **#Feature** | **Class Dist ('0':'1')** |
