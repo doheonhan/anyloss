@@ -26,7 +26,7 @@
 * Bayesian Sign Test: bayesiantests.py and BAYES_Mine.ipynb
 * Additional Information for the paper
 
-### 7. Additional work for rebuttal to reviewers of KDD 2024 (Included in the paper)
+### 7. Additional work for the section 5 in the paper
 
 [Description of 102 Diverse Datasets]
   
