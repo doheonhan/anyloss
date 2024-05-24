@@ -1,26 +1,28 @@
 # AnyLoss
-## <Paper> AnyLoss: Transforming Classification Metrics into Loss Functions
-## <Goal> Generating a loss function that aims at any confusion matrix-based evaluation metric (e.g., f1 score, balanced accuracy, etc.) in binary classification tasks.
+## |Paper| AnyLoss: Transforming Classification Metrics into Loss Functions
+Goal: Generating a loss function that aims at any confusion matrix-based evaluation metric (e.g., f1 score, balanced accuracy, etc.) in binary classification tasks.
 
-### 1. Pure Code Review
+## |How to use|
+The code files below contain the pure code of AnyLoss and the experiments executed in the paper. 
+### 1. The code of AnyLoss in Single-Layer Perceptron (SLP) and Multi-Layer Perceptron (MLP) is shown below.
 * AnyLoss - Code.ipynb
-### 2. 4 datasets
+### 2. The code of experiments with 102 diverse datasets in the paper is shown below. (Section 4.1 in the paper)
+* 4-30: (MSE/BCE/AnyLoss) Performance on 102 Datasets - SLP
+* 4-40: (MSE/BCE/AnyLoss) Performance on 102 Datasets - MLP
+### 3. The code of experiments with 4 imbalanced datasets in the paper is shown below. (Section 4.2 in the paper)
 * 4-10: (MSE/BCE/AnyLoss) Performance on 4 Datasets - SLP
 * 4-13: (SOL) Performance on 4 datasets - SLP
 * 4-20: (MSE/BCE/AnyLoss) Performance on 4 Datasets - MLP
 * 4-22: (SOL) Performance on 4 Datasets - MLP
-### 3. 102 datasets
-* 4-30: (MSE/BCE/AnyLoss) Performance on 102 Datasets - SLP
-* 4-40: (MSE/BCE/AnyLoss) Performance on 102 Datasets - MLP
-### 4. Comparison with Resampling Strategy
+### 4. The code of experiments for comparison with the resampling strategy. (Section 4.2 in the paper)
 * 4-11: (BCE_SMOTE/BCE_RandomUndersampling/AnyLoss) Comparison on 4 Datasets - SLP
-### 5. Learning Speed
+### 5. The code of experiments for measuring learning time. (Section 4.3 in the paper)
 * 4-51: (MSE/BCE/AnyLoss) Learning Speed on 4 Datasets - SLP
 * 4-52: (SOL) Learning Speed on 4 Datasets - SLP
 * 4-62: (MSE/BCE/AnyLoss/SOL) Learning Speed on 4 Datasets - MLP
 ### 6. Misc.
-* 4 datasets (breast_cancer, diabetes_prediction_dataset) and others are too big to upload.
-* 102 datasets: data_num
+* Datasets (breast_cancer, diabetes_prediction_dataset) are too big to upload and they can be found at Kaggle. (See the reference in the paper)
+* 102 datasets: 'data_num' folder here
 * Bayesian Sign Test: bayesiantests.py and BAYES_Mine.ipynb
 * Additional Information for the paper
   
