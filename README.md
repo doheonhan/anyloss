@@ -3,7 +3,6 @@
 ### Generating a loss function that aims at any confusion matrix-based evaluation metric (e.g., f1 score, balanced accuracy, etc.) in binary classification tasks.
 
 ## |How to use|
-The code files below contain the pure code of AnyLoss and the experiments executed in the paper. 
 ### 1. The code of AnyLoss in Single-Layer Perceptron (SLP) and Multi-Layer Perceptron (MLP) is shown below.
 * AnyLoss - Code.ipynb
 ### 2. The code of experiments with 102 diverse datasets in the paper is shown below. (Section 4.1 in the paper)
