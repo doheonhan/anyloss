@@ -5,7 +5,43 @@
 
 ## |How to use|
 ### 1. The code of AnyLoss in Single-Layer Perceptron (SLP) and Multi-Layer Perceptron (MLP) is shown below.
-* AnyLoss - Code.ipynb
+* The code in detail: AnyLoss - Code.ipynb
+* For Quick Use (Python Code with Tensorflow): Define AnyLoss using "def" and put the loss name in the "[   ]" when compiling.
+  
+```
+import tensorflow as tf
+def Ours_Accu(y_true, y_pred):
+    y_pred = 1/(1+tf.math.exp(-L*(y_pred-0.5)))
+    yl = y_train.shape[0]
+    accu = (yl-tf.reduce_sum(y_true)-tf.reduce_sum(y_pred)+2*tf.reduce_sum(y_true*y_pred)) / yl
+    return 1-accu
+
+def Ours_Fbeta(y_true, y_pred):
+    beta = 1  # 1=F1, 0.5=F0.5, 2=F2... 
+    y_pred = 1/(1+tf.math.exp(-L*(y_pred-0.5)))
+    numerator = (1+beta**2)*tf.reduce_sum(y_true*y_pred)
+    denominator = (beta**2)*tf.reduce_sum(y_true) + tf.reduce_sum(y_pred)
+    return 1-(numerator/denominator)
+
+def Ours_Gmean(y_true, y_pred):
+    y_pred = 1/(1+tf.math.exp(-L*(y_pred-0.5)))
+    syhy = tf.reduce_sum(y_true*y_pred)
+    sy = tf.reduce_sum(y_true)
+    yl = (y_train.shape[0])
+    gmean = tf.sqrt(syhy*(yl-tf.reduce_sum(y_pred)-sy+syhy)/(sy*(yl-sy)))
+    return 1-gmean
+
+def Ours_BAccu(y_true, y_pred):
+    y_pred = 1/(1+tf.math.exp(-L*(y_pred-0.5)))
+    syhy = tf.reduce_sum(y_true*y_pred)
+    sy = tf.reduce_sum(y_true)
+    yl = y_train.shape[0]
+    baccu = (yl*(syhy+sy)-sy*(tf.reduce_sum(y_pred)+sy)) / (2*sy*(yl-sy))
+    return 1-baccu
+
+model.compile(loss=[  ], optimizer=opt, metrics=['accuracy']) # [  ]: MSE // BCE // Ours_Accu // Ours_Fbeta // ...
+```
+
 ### 2. The code of experiments with 102 diverse datasets in the paper is shown below. (Section 4.1 in the paper)
 * 4-30: (MSE/BCE/AnyLoss) Performance on 102 Datasets - SLP
 * 4-40: (MSE/BCE/AnyLoss) Performance on 102 Datasets - MLP
@@ -22,7 +58,7 @@
 * 4-62: (MSE/BCE/AnyLoss/SOL) Learning Speed on 4 Datasets - MLP
 ### 6. Misc.
 * Datasets (breast_cancer, diabetes_prediction_dataset) are too big to upload and they can be found at Kaggle. (See the reference in the paper)
-* 102 datasets: 'data_num' folder here
+* 102 datasets: 'data_num' folder
 * Bayesian Sign Test: bayesiantests.py and BAYES_Mine.ipynb
 * Additional Information for the paper
 
