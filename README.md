@@ -39,6 +39,7 @@ def Ours_BAccu(y_true, y_pred):
     baccu = (yl*(syhy+sy)-sy*(tf.reduce_sum(y_pred)+sy)) / (2*sy*(yl-sy))
     return 1-baccu
 
+L = 73   # Hyper Parameter, positive real number but integer used for convenience.
 model.compile(loss=[  ], optimizer=opt, metrics=['accuracy']) # [  ]: MSE // BCE // Ours_Accu // Ours_Fbeta // ...
 ```
 
